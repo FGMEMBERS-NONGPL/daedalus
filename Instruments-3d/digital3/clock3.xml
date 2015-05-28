@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!--== X-305 Daedalus Starship  version 4.1 ==-->
+
+<PropertyList>
+
+ <path>clock3.ac</path>
+
+ <animation>
+	<name>clock-lit</name>
+	<object-name>HH.101</object-name>
+	<object-name>HH.102</object-name>
+	<object-name>MM.103</object-name>
+	<object-name>MM.104</object-name>
+	<object-name>SS.105</object-name>
+	<object-name>SS.106</object-name>
+	<object-name>hms.dec</object-name>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>clock-lit</object-name>
+	<condition>
+		<property>sim/model/daedalus/systems/power-switch</property>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>HH.101</object-name>
+	<property>sim/time/real/hour</property>
+	<factor>0.01</factor>
+	<step>10</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>HH.102</object-name>
+	<property>sim/time/real/hour</property>
+	<factor>0.1</factor>
+	<step>1</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>MM.103</object-name>
+	<property>sim/time/real/minute</property>
+	<factor>0.01</factor>
+	<step>10</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>MM.104</object-name>
+	<property>sim/time/real/minute</property>
+	<factor>0.1</factor>
+	<step>1</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>SS.105</object-name>
+	<property>sim/time/real/second</property>
+	<factor>0.01</factor>
+	<step>10</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>SS.106</object-name>
+	<property>sim/time/real/second</property>
+	<factor>0.1</factor>
+	<step>1</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>scale</type>
+	<object-name>clock-lit</object-name>
+	<x-offset>2</x-offset>
+	<y-offset>2</y-offset>
+	<z-offset>2</z-offset>
+ </animation>
+</PropertyList>

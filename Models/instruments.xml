@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!-- X-305 Daedalus Starship  version 3.0 for FlightGear OSG only -->
+
+<PropertyList>
+
+<!-- display center     x -130.745 y -1.295 z 47.736
+     upper left corner  x -130.817 y -1.447 z 47.848
+     lower right corner x -130.673 y -1.143 z 47.624
+     span                    0.144    0.304    0.224
+
+     pitch from horizontal = -32.768
+-->
+
+ <model>
+	<name>ALTITUDE</name>
+	<path>Aircraft/daedalus/Instruments-3d/digital3/altitude3.xml</path>
+	<offsets>
+		<x-m>0.004</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.007</z-m>
+		<pitch-deg>-32.768</pitch-deg>
+		<w>512</w>
+		<h>512</h>
+	</offsets>
+ </model>
+
+ <model>
+	<name>HEADING</name>
+	<path>Aircraft/daedalus/Instruments-3d/digital3/heading3.xml</path>
+	<offsets>
+		<x-m>0.030</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.047</z-m>
+		<pitch-deg>-32.768</pitch-deg>
+		<w>512</w>
+		<h>512</h>
+	</offsets>
+ </model>
+
+ <model>
+	<name>VELOCITY</name>
+	<path>Aircraft/daedalus/Instruments-3d/digital3/velocity3.xml</path>
+	<offsets>
+		<x-m>0.056</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.087</z-m>
+		<pitch-deg>-32.768</pitch-deg>
+		<w>512</w>
+		<h>512</h>
+	</offsets>
+ </model>
+
+ <model>
+	<name>GPS</name>
+	<path>Aircraft/daedalus/Instruments-3d/digital3/gps3.xml</path>
+	<offsets>
+		<x-m>0.082</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.127</z-m>
+		<pitch-deg>-32.768</pitch-deg>
+		<w>512</w>
+		<h>512</h>
+	</offsets>
+ </model>
+
+ <model>
+	<name>ENGINE POWER GRAPH</name>
+	<path>Aircraft/daedalus/Instruments-3d/digital3/engine3.xml</path>
+	<offsets>
+		<x-m>0.108</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.168</z-m>
+		<pitch-deg>-32.768</pitch-deg>
+		<w>512</w>
+		<h>512</h>
+	</offsets>
+ </model>
+
+	<animation>
+		<type>range</type>
+		<object-name>ALTITUDE</object-name>
+		<object-name>HEADING</object-name>
+		<object-name>VELOCITY</object-name>
+		<object-name>ENGINE POWER GRAPH</object-name>
+		<object-name>GPS</object-name>
+		<min-m>0</min-m>
+		<max-m>25</max-m>
+	</animation>
+
+ <animation>
+	<type>material</type>
+	<object-name>altitude-lit</object-name>
+	<emission>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</emission>
+ </animation>
+
+ <animation>
+	<type>material</type>
+	<object-name>heading-lit</object-name>
+	<emission>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</emission>
+ </animation>
+
+ <animation>
+	<type>material</type>
+	<object-name>velocity-lit</object-name>
+	<emission>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</emission>
+ </animation>
+
+ <animation>
+	<type>material</type>
+	<object-name>engine-lit</object-name>
+	<emission>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</emission>
+ </animation>
+
+ <animation>
+	<type>material</type>
+	<object-name>gps-lit</object-name>
+	<emission>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</emission>
+ </animation>
+</PropertyList>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!-- ===== X-305 Daedalus  version 4.0 ===== -->
+<PropertyList>
+	<path>sphere.ac</path>
+	<animation>
+		<type>range</type>
+		<object-name>Sphere</object-name>
+		<min-m>0</min-m>
+		<max-m>25000</max-m>
+	</animation>
+
+	<animation>
+		<type>dist-scale</type>
+		<object-name>Sphere</object-name>
+		<interpolation>
+			<entry><ind>0</ind><dep>0.01</dep></entry>
+			<entry><ind>400</ind><dep>0.04</dep></entry>
+			<entry><ind>1500</ind><dep>0.08</dep></entry>
+			<entry><ind>7500</ind><dep>0.40</dep></entry>
+			<entry><ind>25000</ind><dep>0.80</dep></entry>
+		</interpolation>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>Sphere</object-name>
+		<ambient>
+			<red>1</red>
+			<green>0.4</green>
+			<blue>0.4</blue>
+		</ambient>
+		<diffuse>
+			<red>1</red>
+			<green>0.4</green>
+			<blue>0.4</blue>
+		</diffuse>
+		<emission>
+			<red>1</red>
+			<green>0.4</green>
+			<blue>0.4</blue>
+		</emission>
+		<specular>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</specular>
+		<transparency>
+			<min>1</min>
+		</transparency>
+	</animation>
+
+	<animation>
+		<type>scale</type>
+		<object-name>Sphere</object-name>
+		<property>/sim/current-view/field-of-view</property>
+		<x-factor>0.018</x-factor>
+		<y-factor>0.018</y-factor>
+		<z-factor>0.018</z-factor>
+	</animation>
+</PropertyList>

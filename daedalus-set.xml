@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<!-- ===== X-305 Daedalus  version 4.0 ===== -->
+
+<PropertyList include="daedalus-base.xml">
+ <sim>
+	<description>X-305 Daedalus</description>
+	<view n="0">
+		<internal type="bool">true</internal>
+		<config>
+			<!-- x/y/z == right/up/aft -->
+			<z-offset-m>-129.81</z-offset-m>
+			<x-offset-m>-1.08</x-offset-m>
+			<y-offset-m>47.98</y-offset-m>
+			<pitch-offset-deg>0.0</pitch-offset-deg>
+			<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+			<limits>
+				<enabled type="bool">false</enabled>
+			</limits>
+		</config>
+	</view>
+
+	<view n="1">
+		<config>
+			<target-z-offset-m>-200</target-z-offset-m>
+		</config>
+	</view>
+
+	<view n="100">
+		<name>Walk View</name>
+		<type>lookfrom</type>
+		<internal archive="y">false</internal>
+		<enabled type="bool">false</enabled>
+		<config>
+			<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+			<eye-alt-ft-path>sim/walker/altitude-ft</eye-alt-ft-path>
+			<eye-heading-deg-path>sim/walker/heading-deg</eye-heading-deg-path>
+			<eye-lat-deg-path>sim/walker/latitude-deg</eye-lat-deg-path>
+			<eye-lon-deg-path>sim/walker/longitude-deg</eye-lon-deg-path>
+			<eye-pitch-deg-path>sim/walker/pitch-deg</eye-pitch-deg-path>
+			<eye-roll-deg-path>sim/walker/roll-deg</eye-roll-deg-path>
+			<ground-level-nearplane-m type="double">0.5</ground-level-nearplane-m>
+			<x-offset-m archive="y" type="double">0</x-offset-m>
+			<y-offset-m archive="y" type="double">1.77</y-offset-m>
+			<z-offset-m archive="y" type="double">0</z-offset-m>
+			<limits>
+				<enabled type="bool">false</enabled>
+			</limits>
+		</config>
+	</view>
+
+	<view n="101">
+		<name>Walker Orbit View</name>
+		<type>lookat</type>
+		<internal archive="y">false</internal>
+		<enabled type="bool">false</enabled>
+		<config>
+			<from-model type="bool">false</from-model>
+			<from-model-idx type="int">0</from-model-idx>
+			<at-model type="bool">false</at-model>
+			<at-model-idx type="int">100</at-model-idx>
+			<eye-alt-ft-path>sim/walker/altitude-ft</eye-alt-ft-path>
+			<eye-heading-deg-path>sim/walker/heading-deg</eye-heading-deg-path>
+			<eye-lat-deg-path>sim/walker/latitude-deg</eye-lat-deg-path>
+			<eye-lon-deg-path>sim/walker/longitude-deg</eye-lon-deg-path>
+			<eye-pitch-deg-path>sim/walker/pitch-deg</eye-pitch-deg-path>
+			<eye-roll-deg-path>sim/walker/roll-deg</eye-roll-deg-path>
+			<target-alt-ft-path>sim/walker/altitude-ft</target-alt-ft-path>
+			<target-heading-deg-path>sim/walker/heading-deg</target-heading-deg-path>
+			<target-lat-deg-path>sim/walker/latitude-deg</target-lat-deg-path>
+			<target-lon-deg-path>sim/walker/longitude-deg</target-lon-deg-path>
+			<target-pitch-deg-path>sim/walker/pitch-deg</target-pitch-deg-path>
+			<target-roll-deg-path>sim/walker/roll-deg</target-roll-deg-path>
+			<target-x-offset-m type="double">0</target-x-offset-m>
+			<target-y-offset-m type="double">1.5</target-y-offset-m>
+			<target-z-offset-m type="double">0</target-z-offset-m>
+			<ground-level-nearplane-m type="double">0.2f</ground-level-nearplane-m>
+			<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+			<x-offset-m type="double">0</x-offset-m>
+			<y-offset-m type="double">1</y-offset-m>
+			<z-offset-m type="double">5</z-offset-m>
+			<heading-offset-deg>0</heading-offset-deg>
+			<pitch-offset-deg>0</pitch-offset-deg>
+			<roll-offset-deg>0</roll-offset-deg>
+			<limits>
+				<enabled type="bool">false</enabled>
+			</limits>
+		</config>
+	</view>
+
+	<view n="112">
+		<name>Nose View</name>
+		<type>lookfrom</type>
+		<internal type="bool">true</internal>
+		<config>
+			<from-model type="bool">true</from-model>
+			<from-model-idx type="int">0</from-model-idx>
+			<!-- x/y/z == right/up/aft -->
+			<z-offset-m>-313.9</z-offset-m>
+			<x-offset-m>1.903</x-offset-m>
+			<y-offset-m>17.3</y-offset-m>
+			<pitch-offset-deg>0.0</pitch-offset-deg>
+			<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+			<limits>
+				<enabled type="bool">true</enabled>
+				<left>
+					<heading-max-deg>62</heading-max-deg>
+					<x-offset-threshold-deg>65</x-offset-threshold-deg>
+					<x-offset-max-m>0.61</x-offset-max-m>
+				</left>
+				<right>
+					<heading-max-deg>64</heading-max-deg>
+					<x-offset-threshold-deg>65</x-offset-threshold-deg>
+					<x-offset-max-m>0.61</x-offset-max-m>
+				</right>
+			</limits>
+		</config>
+	</view>
+
+	<view n="113">
+		<name>Port Landing Bay</name>
+		<type>lookfrom</type>
+		<internal type="bool">true</internal>
+		<config>
+			<from-model type="bool">true</from-model>
+			<from-model-idx type="int">0</from-model-idx>
+			<from-model type="bool">true</from-model>
+			<z-offset-m>-61.1</z-offset-m>
+			<x-offset-m>-106.86</x-offset-m>
+			<y-offset-m>9.7</y-offset-m>
+			<pitch-offset-deg>0.0</pitch-offset-deg>
+			<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+		</config>
+	</view>
+
+	<view n="114">
+		<name>Starboard Landing Bay</name>
+		<type>lookfrom</type>
+		<internal type="bool">true</internal>
+		<config>
+			<from-model type="bool">true</from-model>
+			<from-model-idx type="int">0</from-model-idx>
+			<z-offset-m>-61.1</z-offset-m>
+			<x-offset-m>106.86</x-offset-m>
+			<y-offset-m>9.7</y-offset-m>
+			<pitch-offset-deg>0.0</pitch-offset-deg>
+			<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+		</config>
+	</view>
+
+	<view n="115">
+		<name>External Bridge View</name>
+		<type>lookat</type>
+		<internal archive="y">false</internal>
+		<enabled type="bool">true</enabled>
+		<config>
+			<from-model type="bool">false</from-model>
+			<at-model type="bool">true</at-model>
+			<at-model-idx type="int">0</at-model-idx>
+			<eye-alt-ft-path>/position/altitude-ft</eye-alt-ft-path>
+			<eye-heading-deg-path>/orientation/heading-deg</eye-heading-deg-path>
+			<eye-lat-deg-path>/position/latitude-deg</eye-lat-deg-path>
+			<eye-lon-deg-path>/position/longitude-deg</eye-lon-deg-path>
+			<target-x-offset-m type="double">0</target-x-offset-m> <!-- aircraft y axis right -->
+			<target-y-offset-m type="double">48</target-y-offset-m> <!-- aircraft z axis up -->
+			<target-z-offset-m type="double">-134</target-z-offset-m> <!-- aircraft x axis forward -->
+			<ground-level-nearplane-m type="double">1.0f</ground-level-nearplane-m>
+			<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+			<x-offset-m type="double">0</x-offset-m>
+			<y-offset-m type="double">1</y-offset-m>
+			<z-offset-m type="double">200</z-offset-m> <!-- distance -->
+			<heading-offset-deg>0</heading-offset-deg>
+			<pitch-offset-deg>-5</pitch-offset-deg> <!-- initial angle looking down -->
+			<roll-offset-deg>0</roll-offset-deg>
+			<limits>
+				<enabled type="bool">false</enabled>
+			</limits>
+		</config>
+	</view>
+
+	<view n="116">
+		<name>External Port Landing Bay View</name>
+		<type>lookat</type>
+		<internal archive="y">false</internal>
+		<enabled type="bool">true</enabled>
+		<config>
+			<from-model type="bool">false</from-model>
+			<from-model-idx type="int">0</from-model-idx>
+			<at-model type="bool">true</at-model>
+			<at-model-idx type="int">0</at-model-idx>
+			<eye-alt-ft-path>/position/altitude-ft</eye-alt-ft-path>
+			<eye-heading-deg-path>/orientation/heading-deg</eye-heading-deg-path>
+			<eye-lat-deg-path>/position/latitude-deg</eye-lat-deg-path>
+			<eye-lon-deg-path>/position/longitude-deg</eye-lon-deg-path>
+			<target-x-offset-m type="double">-106.69</target-x-offset-m>
+			<target-y-offset-m type="double">12.65</target-y-offset-m>
+			<target-z-offset-m type="double">-59.59</target-z-offset-m>
+			<ground-level-nearplane-m type="double">1.0f</ground-level-nearplane-m>
+			<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+			<x-offset-m type="double">0</x-offset-m>
+			<y-offset-m type="double">0</y-offset-m>
+			<z-offset-m type="double">250</z-offset-m>
+			<heading-offset-deg>20</heading-offset-deg>
+			<pitch-offset-deg>-5</pitch-offset-deg>
+			<roll-offset-deg>0</roll-offset-deg>
+			<limits>
+				<enabled type="bool">false</enabled>
+			</limits>
+		</config>
+	</view>
+
+	<view n="117">
+		<name>External Starboard Landing Bay View</name>
+		<type>lookat</type>
+		<internal archive="y">false</internal>
+		<enabled type="bool">true</enabled>
+		<config>
+			<from-model type="bool">false</from-model>
+			<from-model-idx type="int">0</from-model-idx>
+			<at-model type="bool">true</at-model>
+			<at-model-idx type="int">0</at-model-idx>
+			<eye-alt-ft-path>/position/altitude-ft</eye-alt-ft-path>
+			<eye-heading-deg-path>/orientation/heading-deg</eye-heading-deg-path>
+			<eye-lat-deg-path>/position/latitude-deg</eye-lat-deg-path>
+			<eye-lon-deg-path>/position/longitude-deg</eye-lon-deg-path>
+			<target-x-offset-m type="double">106.69</target-x-offset-m>
+			<target-y-offset-m type="double">12.65</target-y-offset-m>
+			<target-z-offset-m type="double">-59.59</target-z-offset-m>
+			<ground-level-nearplane-m type="double">1.0f</ground-level-nearplane-m>
+			<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+			<x-offset-m type="double">0</x-offset-m>
+			<y-offset-m type="double">0</y-offset-m>
+			<z-offset-m type="double">250</z-offset-m>
+			<heading-offset-deg>-25</heading-offset-deg>
+			<pitch-offset-deg>0</pitch-offset-deg>
+			<roll-offset-deg>0</roll-offset-deg>
+			<limits>
+				<enabled type="bool">false</enabled>
+			</limits>
+		</config>
+	</view>
+ </sim>
+
+ <nasal>
+	<daedalus>
+		<file>Aircraft/daedalus/Nasal/daedalus.nas</file>
+	</daedalus>
+	<digitalPanel>
+		<file>Aircraft/daedalus/Instruments-3d/digital3/digital3.nas</file>
+		<file>Aircraft/daedalus/Instruments-3d/digital3/savedata.nas</file>
+	</digitalPanel>
+	<pilot>
+		<file>Aircraft/daedalus/Nasal/pilot-animate.nas</file>
+	</pilot>
+	<walk>
+		<file>Aircraft/daedalus/Nasal/walk.nas</file>
+		<script>main_loop();</script>
+	</walk>
+	<walker>
+		<file>Aircraft/daedalus/Nasal/walker-animate.nas</file>
+	</walker>
+ </nasal>
+</PropertyList>

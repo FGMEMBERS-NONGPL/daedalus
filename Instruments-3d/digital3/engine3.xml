@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<!--== X-305 Daedalus Starship  version 3.0 ==-->
+
+<PropertyList>
+
+ <path>engineering3.ac</path>
+
+ <animation>
+	<name>engine-lit</name>
+	<object-name>damage.bar</object-name>
+	<object-name>engine.chart</object-name>
+	<object-name>engineering.label</object-name>
+	<object-name>engine.bar.001</object-name>
+	<object-name>engine.bar.002</object-name>
+	<object-name>engine.bar.003</object-name>
+	<object-name>engine.bar.004</object-name>
+	<object-name>powergraph.001</object-name>
+	<object-name>powergraph.002</object-name>
+	<object-name>powergraph.003</object-name>
+	<object-name>powergraph.004</object-name>
+	<object-name>powergraph.005</object-name>
+	<object-name>powergraph.006</object-name>
+	<object-name>powergraph.007</object-name>
+	<object-name>powergraph.008</object-name>
+	<object-name>powergraph.009</object-name>
+	<object-name>powergraph.010</object-name>
+	<object-name>powergraph.011</object-name>
+	<object-name>powergraph.012</object-name>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>engine-lit</object-name>
+	<condition>
+		<property>sim/model/daedalus/systems/power-switch</property>
+	</condition>
+ </animation>
+
+<!-- damage bar moves 25 count per color -->
+ <animation>
+	<type>textranslate</type>
+	<object-name>damage.bar</object-name>
+	<property>sim/model/daedalus/damage/hits-counter</property>
+	<factor>0.005</factor>
+	<step>1</step>
+	<scroll>1</scroll>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>engine.bar.001</object-name>
+	<property>sim/model/daedalus/lighting/engine-glow</property>
+	<factor>0.2</factor>
+	<step>1</step>
+	<scroll>1</scroll>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>engine.bar.002</object-name>
+	<property>sim/model/daedalus/lighting/forward-glow</property>
+	<factor>0.05</factor>
+	<step>1</step>
+	<scroll>1</scroll>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>engine.bar.003</object-name>
+	<property>sim/model/daedalus/sound/pitch-level</property>
+	<factor>0.2</factor>
+	<step>1</step>
+	<scroll>1</scroll>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>engine.bar.004</object-name>
+	<property>sim/model/daedalus/lighting/ftl-glow</property>
+	<factor>0.15</factor>
+	<step>1</step>
+	<scroll>1</scroll>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>powergraph.001</object-name>
+	<object-name>powergraph.002</object-name>
+	<condition>
+		<and>
+			<greater-than-equals>
+				<property>engines/engine/speed-max-powerlevel</property>
+				<value>0</value>
+			</greater-than-equals>
+			<property>sim/model/daedalus/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>powergraph.003</object-name>
+	<condition>
+		<and>
+			<greater-than-equals>
+				<property>engines/engine/speed-max-powerlevel</property>
+				<value>1</value>
+			</greater-than-equals>
+			<property>sim/model/daedalus/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>powergraph.004</object-name>
+	<condition>
+		<and>
+			<greater-than-equals>
+				<property>engines/engine/speed-max-powerlevel</property>
+				<value>2</value>
+			</greater-than-equals>
+			<property>sim/model/daedalus/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>powergraph.005</object-name>
+	<condition>
+		<and>
+			<greater-than-equals>
+				<property>engines/engine/speed-max-powerlevel</property>
+				<value>3</value>
+			</greater-than-equals>
+			<property>sim/model/daedalus/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>powergraph.006</object-name>
+	<condition>
+		<and>
+			<greater-than-equals>
+				<property>engines/engine/speed-max-powerlevel</property>
+				<value>4</value>
+			</greater-than-equals>
+			<property>sim/model/daedalus/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>powergraph.007</object-name>
+	<condition>
+		<and>
+			<greater-than-equals>
+				<property>engines/engine/speed-max-powerlevel</property>
+				<value>5</value>
+			</greater-than-equals>
+			<property>sim/model/daedalus/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>powergraph.008</object-name>
+	<condition>
+		<and>
+			<greater-than-equals>
+				<property>engines/engine/speed-max-powerlevel</property>
+				<value>6</value>
+			</greater-than-equals>
+			<property>sim/model/daedalus/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>powergraph.009</object-name>
+	<condition>
+		<and>
+			<greater-than-equals>
+				<property>engines/engine/speed-max-powerlevel</property>
+				<value>7</value>
+			</greater-than-equals>
+			<property>sim/model/daedalus/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>powergraph.010</object-name>
+	<condition>
+		<and>
+			<greater-than-equals>
+				<property>engines/engine/speed-max-powerlevel</property>
+				<value>8</value>
+			</greater-than-equals>
+			<property>sim/model/daedalus/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>powergraph.011</object-name>
+	<condition>
+		<and>
+			<greater-than-equals>
+				<property>engines/engine/speed-max-powerlevel</property>
+				<value>9</value>
+			</greater-than-equals>
+			<property>sim/model/daedalus/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>powergraph.012</object-name>
+	<condition>
+		<and>
+			<greater-than-equals>
+				<property>engines/engine/speed-max-powerlevel</property>
+				<value>10</value>
+			</greater-than-equals>
+			<property>sim/model/daedalus/systems/power-switch</property>
+		</and>
+	</condition>
+ </animation>
+
+</PropertyList>

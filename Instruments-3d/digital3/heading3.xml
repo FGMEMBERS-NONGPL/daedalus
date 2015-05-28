@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<!--== X-305 Daedalus Starship  version 3.0 ==-->
+
+<PropertyList>
+
+ <path>heading3.ac</path>
+
+ <animation>
+	<name>heading-lit</name>
+	<object-name>head.label</object-name>
+	<object-name>head.101</object-name>
+	<object-name>head.102</object-name>
+	<object-name>head.103</object-name>
+	<object-name>head.dec</object-name>
+	<object-name>head.104</object-name>
+	<object-name>head.minus</object-name>
+	<object-name>head.105</object-name>
+	<object-name>head.106</object-name>
+	<object-name>head.107</object-name>
+	<object-name>head.108</object-name>
+	<object-name>head.deg</object-name>
+	<object-name>head.hold.red</object-name>
+	<object-name>head.hold.yellow</object-name>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>heading-lit</object-name>
+	<condition>
+		<property>sim/model/daedalus/systems/power-switch</property>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>head.hold.red</object-name>
+	<condition>
+		<and>
+			<not>
+				<equals>
+					<property>autopilot/locks/heading</property>
+					<value type="string"></value>
+				</equals>
+			</not>
+			<not>
+				<equals>
+					<property>autopilot/locks/heading</property>
+					<value type="string">true-heading-hold</value>
+				</equals>
+			</not>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>head.hold.yellow</object-name>
+	<condition>
+		<equals>
+			<property>autopilot/locks/heading</property>
+			<value type="string">true-heading-hold</value>
+		</equals>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>head.101</object-name>
+	<property>instrumentation/digital/heading-whole</property>
+	<factor>0.0001</factor>
+	<step>1000</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>head.102</object-name>
+	<property>instrumentation/digital/heading-whole</property>
+	<factor>0.001</factor>
+	<step>100</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>head.103</object-name>
+	<property>instrumentation/digital/heading-whole</property>
+	<factor>0.01</factor>
+	<step>10</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>head.104</object-name>
+	<property>instrumentation/digital/heading-whole</property>
+	<factor>0.1</factor>
+	<step>1</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>head.minus</object-name>
+	<condition>
+		<and>
+			<less-than>
+				<property>orientation/pitch-deg</property>
+				<value>0</value>
+			</less-than>
+			<equals>
+				<property>instrumentation/digital/heading-mode</property>
+				<value>0</value>
+			</equals>
+		</and>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>head.105</object-name>
+	<condition>
+			<equals>
+				<property>instrumentation/digital/heading-mode</property>
+				<value>1</value>
+			</equals>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>head.105</object-name>
+	<property>instrumentation/digital/pitch-whole</property>
+	<factor>0.0001</factor>
+	<step>1000</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>head.106</object-name>
+	<property>instrumentation/digital/pitch-whole</property>
+	<factor>0.001</factor>
+	<step>100</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>head.107</object-name>
+	<property>instrumentation/digital/pitch-whole</property>
+	<factor>0.01</factor>
+	<step>10</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>head.108</object-name>
+	<property>instrumentation/digital/pitch-whole</property>
+	<factor>0.1</factor>
+	<step>1</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+</PropertyList>

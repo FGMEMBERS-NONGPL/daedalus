@@ -1,0 +1,140 @@
+Version# Vertices PolygonFaces Comments
+
+2014.May.10
+5.01		no change to models
+	Fix minor typo in new default colors.
+
+2014.May.09
+5.0	46389	39254	replace daedalus.ac
+	Rewrite lighting functions and optimization of nasal code.
+	Add livery and color setting dialogs.
+	Remember livery choice.
+	Separate bracing and structure supports from walls as different colors.
+	Brighten and re-assign colors in landing bay, catwalks.
+	Fix markings on bay door floors to match new colors definitions.
+	Add handling and animation for walking on, and stepping through open bottom bay doors.
+	Fix saving of walker location, axis mismatch.
+	Fix bug in altitude of walker exiting moving aircraft.
+	Change how walker exits the aircraft to ground level in appropriate situations for beaming.
+	Fix bug of walker getting back on/in aircraft, z-axis and location mismatch.
+
+2014.Feb.02
+4.23		no change to models
+	Change key for Configuration dialog from Tab to Equal, for compliance with FG 3.0
+
+2012.Mar.06
+4.22	Remove ATC chatter at startup (introduced in FG 2.4)
+
+2011.May.29
+4.21	Add version information to splash screen.
+
+2010.Apr.08
+4.2	46229	39254	replace daedalus.ac
+	Add interior sound rumble/ripple.
+	Fix bridge floor color.
+
+2010.Mar.25
+4.1	46229	39254	replace daedalus.ac, add instruments
+	FIX overlapping poly in window.
+	FIX brightness of floors, add texture.
+	ADD detail to cylinder below bridge window.
+	ADD clock and heading instruments to center display.
+
+2010.Mar.19
+4.0	45995	39134	replace daedalus.ac, add beacon sphere
+	FIX locations of nav and beacon lights to match canon.
+	FIX location of rear window view, correct glow of rear hyperspace engines.
+	ADD landing bay guide strobe lights.
+	ADD landing lights.
+	Add new textures to hull.
+	Retexture entire hull.
+	Add cones under nose of landing bay.
+	Add windows and other light sources to various places on hull.
+	ADD bay doors to underside of landing bay.
+	ADD navigational grid to plot table.
+	Change lighting colors in bridge.
+	Change some bridge consoles to be more like X-305 than X-302.
+	FIX shape of bridge hull.
+	FIX shape of bridge windows.
+	ADD texture to engine exhaust.
+	Fix angles of some hull edges.
+	Fix shadow shape.
+	Fix door/hatch sound effects.
+	Fix incorrect comment syntax in one xml file.
+
+2009.Dec.20
+3.12		no change to models
+	Add conditions to display of text messages.
+
+2009.Nov.23
+3.11		no change to models
+	FIX wording of warning messages regarding engine power.
+	Update aircraft-status flags.
+	FIX material lighting/emissions of ai high-poly static model.
+
+2009.Oct.17
+3.1		update instrument model
+	Add instrumentation modes to configure dialog.
+	FIX velocity instrumentation display.
+
+2009.Oct.04
+3.01	46345	44610	replace daedalus.ac
+	Minor cleanup of hidden polygons, and edges.
+
+2009.Oct.01
+3.0	46349	47835	new models
+	Add detail to landing bay and bridge.
+	Add hallways.
+	Split bridge and landing bay objects into different color shadings.
+	Add hover control to middle mouse button.
+	Add pilot and walker models.
+	Add parachute to walker model.
+	Add animation sequence manager.
+	Add walker orbit camera.
+	Add help and basic tutorials for Walker animations.
+	Fix nav sphere visibliity.
+
+2009.Jul.12
+2.11	Fix nav sphere size to scale at different field-of-view.
+	Fix beacon visibility.
+
+2009.Jul.09
+2.1	29295	42514	changes to daedalus model
+	Add new sphere model to increase visibility range for nav lights.
+	  Fix nav lights to be visible at greater distance.
+	Add multiplayer model.
+	Add tracking backend.
+	Fix timeout delay for popup info box.
+	Fix boolean values.
+
+2009.Jul.05
+2.0	29295	42530	new base model
+	Scale entire ship for correct size.
+	Add BC-303 bridge. (also based on mesh provided by Grzegorz Wereszko)
+	Add texture to hull.
+	Add landing bays and inside of doors.
+	Make landing bay doors openable.
+	Add basic interior lighting (without shadows).
+	Add cockpit selectable locations.
+	Fix Keep nose, tail, and side bays from touching level ground.
+
+2009.Mar.18
+1.3	Fix shadow size and location
+	Fix bridge view location.
+
+2009.Jan.12
+1.2	Add realistic sound effects, thanks to the contribution of Aerotro.
+
+2009.Jan.11
+1.1	Fine tune nav lights at distance, and window lighting.
+	Fine tune view position.
+	Receive permission to distribute.
+	  Add author credits.
+
+2008.Dec.31
+1.0	13926	19832	First release
+	Added framework for ground detection, engine and lighting,
+	Shadow, nav, engine glow textures.
+
+0	11340	16914
+	original unedited by Grzegorz Wereszko

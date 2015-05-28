@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<!-- ===== Livery for  FlightGear 1.9 with OSG ===== -->
+<!-- =====  for X-305 Daedalus   version 5.0   ===== -->
+
+<PropertyList>
+ <sim>
+	<model>
+		<livery>
+			<name type="string">Blue-Yellow</name>
+			<material>
+				<hull-base>
+					<diffuse>
+						<red>0.00</red>
+						<green>0.55</green>
+						<blue>1.00</blue>
+					</diffuse>
+					<ambient>
+						<red>0.00</red>
+						<green>0.55</green>
+						<blue>1.00</blue>
+					</ambient>
+					<specular>
+						<red>0.00</red>
+						<green>0.55</green>
+						<blue>1.00</blue>
+					</specular>
+					<shininess>12</shininess>
+				</hull-base>
+
+				<hull-texture-1>
+					<diffuse>
+						<red>1.00</red>
+						<green>1.00</green>
+						<blue>0.20</blue>
+					</diffuse>
+					<ambient>
+						<red>1.00</red>
+						<green>1.00</green>
+						<blue>0.20</blue>
+					</ambient>
+					<specular>
+						<red>1.00</red>
+						<green>1.00</green>
+						<blue>0.20</blue>
+					</specular>
+					<shininess>16</shininess>
+				</hull-texture-1>
+
+				<hull-texture-2>
+					<diffuse>
+						<red>0.00</red>
+						<green>0.45</green>
+						<blue>0.95</blue>
+					</diffuse>
+					<ambient>
+						<red>0.00</red>
+						<green>0.45</green>
+						<blue>0.95</blue>
+					</ambient>
+					<specular>
+						<red>0.00</red>
+						<green>0.45</green>
+						<blue>0.95</blue>
+					</specular>
+					<shininess>16</shininess>
+				</hull-texture-2>
+
+				<hull-armour>
+					<diffuse>
+						<red>1.00</red>
+						<green>1.00</green>
+						<blue>0.20</blue>
+					</diffuse>
+					<ambient>
+						<red>1.00</red>
+						<green>1.00</green>
+						<blue>0.20</blue>
+					</ambient>
+					<specular>
+						<red>1.00</red>
+						<green>1.00</green>
+						<blue>0.50</blue>
+					</specular>
+					<shininess>32</shininess>
+				</hull-armour>
+
+				<engine-housing>
+					<diffuse>
+						<red>0.22</red>
+						<green>0.33</green>
+						<blue>0.44</blue>
+					</diffuse>
+					<ambient>
+						<red>0.22</red>
+						<green>0.33</green>
+						<blue>0.44</blue>
+					</ambient>
+					<specular>
+						<red>0.22</red>
+						<green>0.33</green>
+						<blue>0.44</blue>
+					</specular>
+					<shininess>16</shininess>
+				</engine-housing>
+
+				<interior-console>
+					<ambient>
+						<red>0.588</red>
+						<green>0.529</green>
+						<blue>0.529</blue>
+					</ambient>
+				</interior-console>
+
+				<interior-pillows>
+					<ambient>
+						<red>0.319</red>
+						<green>0.299</green>
+						<blue>0.299</blue>
+					</ambient>
+				</interior-pillows>
+
+				<interior-detail>
+					<ambient>
+						<red>0.350</red>
+						<green>0.350</green>
+						<blue>0.350</blue>
+					</ambient>
+				</interior-detail>
+
+				<interior-floor>
+					<ambient>
+						<red>0.60</red>
+						<green>0.60</green>
+						<blue>0.60</blue>
+					</ambient>
+				</interior-floor>
+
+				<interior-base>
+					<ambient>
+						<red>0.50</red>
+						<green>0.50</green>
+						<blue>0.50</blue>
+					</ambient>
+				</interior-base>
+
+				<interior-brace>
+					<ambient>
+						<red>0.50</red>
+						<green>0.50</green>
+						<blue>0.00</blue>
+					</ambient>
+				</interior-brace>
+
+				<interior-highlight>
+					<ambient>
+						<red>0.70</red>
+						<green>0.70</green>
+						<blue>0.70</blue>
+					</ambient>
+				</interior-highlight>
+
+				<interior-chair-pipe>
+					<ambient>
+						<red>0.80</red>
+						<green>0.80</green>
+						<blue>0.80</blue>
+					</ambient>
+				</interior-chair-pipe>
+			</material>
+		</livery>
+	</model>
+ </sim>
+</PropertyList>

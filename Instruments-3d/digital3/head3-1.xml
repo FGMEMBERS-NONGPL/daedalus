@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!--== X-305 Daedalus Starship  version 4.1 ==-->
+
+<PropertyList>
+
+ <path>digits3-1.ac</path>
+
+ <animation>
+	<name>head3-lit</name>
+	<object-name>digits3-1.101</object-name>
+	<object-name>digits3-1.102</object-name>
+	<object-name>digits3-1.103</object-name>
+	<object-name>digits3-1.104</object-name>
+	<object-name>digits3-1.dec</object-name>
+ </animation>
+
+ <animation>
+	<type>select</type>
+	<object-name>head3-lit</object-name>
+	<condition>
+		<property>sim/model/daedalus/systems/power-switch</property>
+	</condition>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>digits3-1.101</object-name>
+	<property>instrumentation/digital/heading-whole</property>
+	<factor>0.0001</factor>
+	<step>1000</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>digits3-1.102</object-name>
+	<property>instrumentation/digital/heading-whole</property>
+	<factor>0.001</factor>
+	<step>100</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>digits3-1.103</object-name>
+	<property>instrumentation/digital/heading-whole</property>
+	<factor>0.01</factor>
+	<step>10</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>textranslate</type>
+	<object-name>digits3-1.104</object-name>
+	<property>instrumentation/digital/heading-whole</property>
+	<factor>0.1</factor>
+	<step>1</step>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+ </animation>
+
+ <animation>
+	<type>scale</type>
+	<object-name>head3-lit</object-name>
+	<x-offset>1.5</x-offset>
+	<y-offset>1.5</y-offset>
+	<z-offset>1.5</z-offset>
+ </animation>
+
+</PropertyList>
